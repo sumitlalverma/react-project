@@ -6,6 +6,7 @@ body {
     justify-content: space-between;
     padding-bottom: 40px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 
     @media only screen and (max-width: 768px) {
         flex-direction: column;
@@ -13,10 +14,16 @@ body {
 }
 
 .heading-content {
-    color: #999;
-    letter-spacing: 5px;
-    font-size: 12px;
+    color: #757373;
+    letter-spacing: 3px;
+    font-size: 11px;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
 }
 
 .card {
@@ -48,6 +55,7 @@ body {
 
     @media only screen and (max-width: 768px) {
         width: 100%;
+        padding: 10px;
     }
 }
 
@@ -74,4 +82,45 @@ hr {
 h2,
 h3 {
     margin: 8px 0px;
+}
+
+.mobile-header {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+    label {
+        color: #363636;
+        font-size: 14px;
+    }
+
+    .filter-dropdown {
+        padding: 10px 10px;
+        border: 1px solid #f23636;
+        margin-left: 10px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: #fff;
+
+        .fa {
+            margin-left: 10px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 5px #999;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .courses-header {
+        display: none;
+    }
 }
