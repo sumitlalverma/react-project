@@ -1,0 +1,93 @@
+.course-template {
+    margin-top: 30px;
+
+    section {
+        ul {
+            li {
+                color: #999;
+                line-height: 27px;
+            }
+        }
+
+        p {
+            span {
+                color: #999;
+            }
+        }
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .description {
+        font-weight: 500;
+        font-size: 16px;
+        color: #999;
+    }
+
+    .footer {
+        .course-footer-section {
+            width: 80%;
+            box-sizing: border-box;
+
+            .item-wrapper {
+                max-width: 200px;
+                display: flex;
+                align-items: center;
+                color: #999;
+                margin-right: 30px;
+
+                label {
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    max-width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+                flex-direction: column;
+                line-height: 25px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .enquiry-button {
+        padding: 10px 20px;
+        background-color: #fff;
+        font-weight: bold;
+        border-radius: 3px;
+        cursor: pointer;
+        height: 40px;
+
+        @media only screen and (max-width: 768px) {
+            margin: 20px;
+        }
+    }
+
+    .manageble-button {
+        position: relative;
+
+        button {
+            position: absolute;
+            left: 45%;
+            padding: 7px 20px;
+            border-radius: 20px;
+            background-color: #fff;
+            cursor: pointer;
+
+            @media only screen and (max-width: 768px) {
+                left: 38%;
+            }
+        }
+    }
+}

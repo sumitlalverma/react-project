@@ -1,0 +1,47 @@
+{
+  "courses": [
+    {
+      "category": "AVIATION SECURITY",
+      "label": "Aviation Cyber Security",
+      "description": "This course will help your organization determine where to start in what can seem like a never-ending effort to protect your information ans systems. your next content",
+      "offeredBy": "Center of Aviation & security Studies (CASS)",
+      "timeline": "7 days",
+      "place": "Classroom",
+      "date": "20 February 2023",
+      "objectives": [
+        "Locate and priortize cyber risks in aviation businesses",
+        "Deploy assesment tools specific cyber related risk",
+        "Analyze your company's cyber risk profile",
+        "Recommended risk miltigation processes",
+        "Implement Cyber Security Management System (CSMS) guiding principles in your business"
+      ],
+      "eligibility": [
+        "Recommended level is intermediate.",
+        "The recommended level of language proficency is ICAO Operational Level 4 for courses in English or the equivalent level for other languages."
+      ],
+      "assesmentMethod": "Written exam.",
+      "courseDate": "20-22 February 2023"
+    },
+    {
+      "category": "AVIATION MANAGEMENT",
+      "label": "Network Cyber Security",
+      "description": "This course will help your organization determine where to start in what can seem like a never-ending effort to protect your information ans systems. your next content",
+      "timeline": "3 days",
+      "place": "Classroom",
+      "date": "20 February 2023",
+      "objectives": [
+        "Locate and priortize cyber risks in aviation businesses",
+        "Deploy assesment tools specific cyber related risk",
+        "Analyze your company's cyber risk profile",
+        "Recommended risk miltigation processes",
+        "Implement Cyber Security Management System (CSMS) guiding principles in your business"
+      ],
+      "eligibility": [
+        "Recommended level is intermediate.",
+        "The recommended level of language proficency is ICAO Operational Level 4 for courses in English or the equivalent level for other languages."
+      ],
+      "assesmentMethod": "Written exam.",
+      "courseDate": "20-22 February 2023"
+    }
+  ]
+}

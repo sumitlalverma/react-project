@@ -1,0 +1,77 @@
+/* Basic styling */
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.heading-content {
+    color: #999;
+    letter-spacing: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.card {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #999;
+}
+
+/* Layout and positioning helpers */
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Specific components */
+
+.content-section {
+    width: 73%;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.sort-dropdown {
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    option {
+        cursor: pointer;
+    }
+}
+
+/* Typography */
+
+hr {
+    border: none;
+    height: 2px;
+    width: 70px;
+    background-color: #f23636;
+    margin: 0;
+}
+
+h2,
+h3 {
+    margin: 8px 0px;
+}

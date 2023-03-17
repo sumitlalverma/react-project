@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Learn Courses</title>
+</head>
+
+<body>
+
+    <!-- filter section -->
+    <div class="filters-section card" id="filters-section">
+        <h2>Filter</h2>
+        <hr>
+        <p class="heading-content">OFFERED BY</p>
+    </div>
+
+    <div class="content-section" id="content-section">
+
+        <!-- header -->
+        <div class="courses-header card flex space-between align-center">
+            <b>All Courses (<span id="all-courses-number">37</span>)</b>
+            <div>
+                <b>Sort by:</b>
+                <select class="sort-dropdown" name="sortBy" id="sorting-contents">
+                    <option value="timeline">Timeline</option>
+                    <option value="label">Label</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- course section -->
+        <template id="course-template">
+            <div class="card course-template">
+                <p class="category heading-content"></p>
+                <h3 class="course-name"></h3>
+                <hr>
+                <section>
+                    <p>
+                        <b>Course overview:</b>
+                        <span class="description"></span>
+                    </p>
+                </section>
+                <div class="extra-content">
+                    <section>
+                        <p>
+                            <b>Course objective:</b>
+                            <span class="description"> Upon completing this course you will able to:</span>
+                        </p>
+                        <ul class="course-objective"></ul>
+                    </section>
+                    <section>
+                        <p>
+                            <b>Eligibility:</b>
+                        </p>
+                        <ul class="eligibility"></ul>
+                    </section>
+                    <section>
+                        <p>
+                            <b>Assessment method:</b>
+                            <span class="assessment-method"></span>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            <b>Course date:</b>
+                            <span class="course-date"></span>
+                        </p>
+                    </section>
+                </div>
+                <div class="footer flex space-between">
+                    <div class="course-footer-section flex">
+                    </div>
+                    <button class="enquiry-button">Enquire Now</button>
+                </div>
+
+                <div class="manageble-button"></div>
+            </div>
+
+        </template>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.filters-section {
+    width: 20%;
+    height: fit-content;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.filter-container {
+    padding: 20px;
+    width: fit-content;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 5px #999;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    label {
+        margin-left: 10px;
+        color: #999;
+        font-weight: 500;
+    }
+}
+
+.filter-checkbox {
+    min-width: 20px;
+    min-height: 20px;
+    cursor: pointer;
+}
