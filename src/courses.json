@@ -42,6 +42,30 @@
       ],
       "assesmentMethod": "Written exam.",
       "courseDate": "20-22 February 2023"
+    },
+    {
+      "category": "Data Analysis",
+      "label": "Learning Python for Data Analysis and Visualization Ver 1",
+      "description": "Learn python and how to use it to analyze,visualize and present data. Includes tons of sample code and hours of video!",
+      "timeline": "15 days",
+      "place": "Classroom",
+      "date": "24 February 2023",
+      "objectives": [
+        "Have an intermediate skill level of Python programming.",
+        "Use the numpy library to create and manipulate arrays.",
+        "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+        "Have a portfolio of various data analysis projects.",
+        "Use the Jupyter Notebook Environment."
+      ],
+      "eligibility": [
+        "Basic math skills.",
+        "Basic to Intermediate Python Skills",
+        "Have a computer (either Mac, Windows, or Linux)",
+        "Desire to learn!"
+      ],
+      "assesmentMethod": "Written exam.",
+      "courseDate": "24 February 2023",
+      "offeredBy": "Udemy"
     }
   ]
 }
