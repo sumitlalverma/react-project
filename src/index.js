@@ -23,10 +23,11 @@ const allFilters = [];
 let allCourses = [...courses];
 
 const filterContainer = document.getElementById("filters-section");
+const filterMobileContainer = document.getElementById("filter-popup");
 const coursesLength = document.getElementById("all-courses-number");
 coursesLength.textContent = allCourses.length;
 
-export const onFilter = (value, filter) => {
+export const onFilter = (value) => {
   const indexOf = allFilters.indexOf(value);
   if (indexOf === -1) {
     allFilters.push(value);
@@ -35,7 +36,7 @@ export const onFilter = (value, filter) => {
   }
 
   if (allFilters.length > 0) {
-    allCourses = allCourses.filter((f) => allFilters.includes(f.offeredBy));
+    allCourses = courses.filter((f) => allFilters.includes(f.offeredBy));
     coursesLength.textContent = allCourses.length;
     renderCourses(allCourses);
   } else {
@@ -51,11 +52,29 @@ sortItem.addEventListener("change", () => {
   renderCourses(allCourses);
 });
 
+const desktopSortItem = document.getElementById("desktop-sorting-contents");
+desktopSortItem.addEventListener("change", () => {
+  allCourses = sortCoursesDescendingByKey(allCourses, desktopSortItem.value);
+  renderCourses(allCourses);
+});
+
 const filterList = [
   ...new Set(courses.map((m) => m["offeredBy"]).filter(Boolean)),
 ];
 
-const filters = renderFilters(filterList);
-filterContainer.appendChild(filters);
+const filters = renderFilters(filterList, courses);
 
+const handleCoursesRender = () => {
+  if (window.innerWidth > 768) {
+    filterContainer.appendChild(filters);
+  } else {
+    filterMobileContainer.appendChild(filters);
+  }
+};
+
+window.addEventListener("resize", function () {
+  handleCoursesRender();
+});
+
+handleCoursesRender();
 renderCourses(allCourses);
