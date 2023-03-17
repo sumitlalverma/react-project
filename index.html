@@ -16,6 +16,26 @@
         <hr>
         <p class="heading-content">OFFERED BY</p>
     </div>
+    <div id="mobile-header" class="mobile-header flex align-center card">
+        <label>Filters:</label>
+        <button id="popup-toogle-button" class="filter-dropdown">
+            <label>Offered By</label>
+            <i id="arrow-manager" class="fa fa-chevron-down" aria-hidden="true"></i>
+        </button>
+        <div class="mobile-sort-section">
+            <b>Sort By:</b>
+            <select class="sort-dropdown" name="sortBy" id="sorting-contents">
+                <option value="timeline">Timeline</option>
+                <option value="label">Label</option>
+            </select>
+        </div>
+        <div id="filter-popup" class="filter-popup">
+            <div class="flex space-between align-center">
+                <p class="heading-content">OFFERED BY</p>
+                <i id="cross-popup" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
 
     <div class="content-section" id="content-section">
 
@@ -24,7 +44,7 @@
             <b>All Courses (<span id="all-courses-number">37</span>)</b>
             <div>
                 <b>Sort by:</b>
-                <select class="sort-dropdown" name="sortBy" id="sorting-contents">
+                <select class="sort-dropdown" name="sortBy" id="desktop-sorting-contents">
                     <option value="timeline">Timeline</option>
                     <option value="label">Label</option>
                 </select>
