@@ -9,98 +9,101 @@
 </head>
 
 <body>
-
-    <!-- filter section -->
-    <div class="filters-section card" id="filters-section">
-        <h2>Filter</h2>
-        <hr>
-        <p class="heading-content">OFFERED BY</p>
-    </div>
-    <div id="mobile-header" class="mobile-header flex align-center card">
-        <label>Filters:</label>
-        <button id="popup-toogle-button" class="filter-dropdown">
-            <label>Offered By</label>
-            <i id="arrow-manager" class="fa fa-chevron-down" aria-hidden="true"></i>
-        </button>
-        <div class="mobile-sort-section">
-            <b>Sort By:</b>
-            <select class="sort-dropdown" name="sortBy" id="sorting-contents">
-                <option value="timeline">Timeline</option>
-                <option value="label">Label</option>
-            </select>
-        </div>
-        <div id="filter-popup" class="filter-popup">
-            <div class="flex space-between align-center">
-                <p class="heading-content">OFFERED BY</p>
-                <i id="cross-popup" class="fa fa-times" aria-hidden="true"></i>
-            </div>
-        </div>
-    </div>
-
-    <div class="content-section" id="content-section">
-
-        <!-- header -->
-        <div class="courses-header card flex space-between align-center">
-            <b>All Courses (<span id="all-courses-number">37</span>)</b>
-            <div>
-                <b>Sort by:</b>
-                <select class="sort-dropdown" name="sortBy" id="desktop-sorting-contents">
+    <main>
+        <!-- filter section -->
+        <aside class="filters-section card" id="filters-section">
+            <h2>Filter</h2>
+            <hr class="filter-tag">
+            <label class="heading-content">
+                Offered By
+            </label>
+        </aside>
+        <div id="mobile-header" class="mobile-header flex align-center card">
+            <label>Filters:</label>
+            <button id="popup-toogle-button" class="filter-dropdown">
+                <label>Offered By</label>
+                <i id="arrow-manager" class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="mobile-sort-section">
+                <strong>Sort By:</strong>
+                <select class="sort-dropdown" name="sortBy" id="sorting-contents">
                     <option value="timeline">Timeline</option>
                     <option value="label">Label</option>
                 </select>
             </div>
+            <div id="filter-popup" class="filter-popup">
+                <div class="flex space-between align-center">
+                    <label class="heading-content mt-5">OFFERED BY</label>
+                    <i id="cross-popup" class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
 
-        <!-- course section -->
-        <template id="course-template">
-            <div class="card course-template">
-                <p class="category heading-content"></p>
-                <h3 class="course-name"></h3>
-                <hr>
-                <section>
-                    <p>
-                        <b>Course overview:</b>
-                        <span class="description"></span>
-                    </p>
-                </section>
-                <div class="extra-content">
-                    <section>
-                        <p>
-                            <b>Course objective:</b>
-                            <span class="description"> Upon completing this course you will able to:</span>
-                        </p>
-                        <ul class="course-objective"></ul>
-                    </section>
-                    <section>
-                        <p>
-                            <b>Eligibility:</b>
-                        </p>
-                        <ul class="eligibility"></ul>
-                    </section>
-                    <section>
-                        <p>
-                            <b>Assessment method:</b>
-                            <span class="assessment-method"></span>
-                        </p>
-                    </section>
-                    <section>
-                        <p>
-                            <b>Course date:</b>
-                            <span class="course-date"></span>
-                        </p>
-                    </section>
-                </div>
-                <div class="footer flex space-between">
-                    <div class="course-footer-section flex">
-                    </div>
-                    <button class="enquiry-button">Enquire Now</button>
-                </div>
+        <section class="content-section" id="content-section">
 
-                <div class="manageble-button"></div>
+            <!-- header -->
+            <div class="courses-header card flex space-between align-center">
+                <strong>All Courses (<span id="all-courses-number">37</span>)</strong>
+                <div>
+                    <strong>Sort by:</strong>
+                    <select class="sort-dropdown" name="sortBy" id="desktop-sorting-contents">
+                        <option value="timeline">Timeline</option>
+                        <option value="label">Label</option>
+                    </select>
+                </div>
             </div>
 
-        </template>
-    </div>
+            <!-- course section -->
+            <template id="course-template">
+                <div class="card course-template">
+                    <p class="category heading-content"></p>
+                    <h3 class="course-name"></h3>
+                    <hr class="filter-tag">
+                    <section>
+                        <label>
+                            <strong class="label-key">Course overview:</strong>
+                            <span class="description"></span>
+                        </label>
+                    </section>
+                    <div class="extra-content">
+                        <section class="mt-5">
+                            <label>
+                                <strong class="label-key">Course objective:</strong>
+                                <span class="description"> Upon completing this course you will able to:</span>
+                            </label>
+                            <ul class="course-objective"></ul>
+                        </section>
+                        <section>
+                            <label>
+                                <strong class="label-key">Eligibility:</strong>
+                            </label>
+                            <ul class="eligibility"></ul>
+                        </section>
+                        <section>
+                            <label>
+                                <strong class="label-key">Assessment method:</strong>
+                                <span class="assessment-method description"></span>
+                            </label>
+                        </section>
+                        <section class="mt-5">
+                            <label>
+                                <strong class="label-key">Course date:</strong>
+                                <span class="course-date description"></span>
+                            </label>
+                        </section>
+                    </div>
+                    <footer class="footer flex space-between">
+                        <div class="course-footer-section flex">
+                        </div>
+                        <button class="enquiry-button">Enquire Now</button>
+                    </footer>
+
+                    <div class="manageble-button"></div>
+                </div>
+
+            </template>
+        </section>
+    </main>
     <script src="dist/main.js"></script>
 </body>
 

@@ -2,6 +2,7 @@ import { onFilter } from "..";
 
 export default function renderFilters(items, courses) {
   const container = document.createElement("div");
+  container.classList.add("filter-item-container");
 
   items.forEach((filter) => {
     const filterItem = document.createElement("div");

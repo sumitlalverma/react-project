@@ -1,5 +1,5 @@
 .filters-section {
-    width: 20%;
+    width: 17%;
     height: fit-content;
 
     @media only screen and (max-width: 768px) {
@@ -20,7 +20,6 @@
 .filter-item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
 
     label {
         margin-left: 10px;
@@ -46,6 +45,7 @@
         box-sizing: border-box;
         display: none;
         box-shadow: 0px 15px 10px -15px #111;
+        padding-bottom: 40px;
 
         .fa-times {
             cursor: pointer;
@@ -81,5 +81,18 @@
             background-size: 2em auto;
             line-height: 1.2;
         }
+    }
+}
+
+.filter-tag{
+    margin-bottom: 20px;
+}
+
+.filter-item-container{
+    margin-top: 8px;
+    label{
+        font-size: 12px;
+        color: #696969;
+        font-weight: 600;
     }
 }
